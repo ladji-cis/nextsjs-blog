@@ -4,6 +4,8 @@ import Link from "next/link";
 import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.css";
 
+import PropTypes from 'prop-types'
+
 const name = 'Ladji CISSE';
 export const siteTitle = "Next.js Sample Website";
 
@@ -65,4 +67,9 @@ const Layout = ({ children, home }) => {
   )
 }
 
+Layout.propTypes = {
+  home: PropTypes.bool
+};
+
 export default Layout
+
